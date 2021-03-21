@@ -2,35 +2,18 @@
 
   <html>
 
-    <style>
-      h2 {  
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-      }
-      h3 {
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-      }
-      p{
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-      }
-      ol{
-        margin-left:45%;
-        margin-right:55%;
-      }
-      
-    </style>
+    <link rel="stylesheet" type="text/css" href=CSS/style.css>
+
     <title>HW 1: Personal website for Julian Molina</title>
     <body>
-    <nav>
+    <nav class="navigation_bar">
       <a href="index.html">Main page</a>
-      <a href="extra_stories.html">Stories</a>
+      <a href="Pages/extra_stories.html">Stories</a>
     </nav>
     <h2>Julian Molina</h2>
     <h3>Hello and welcome to my webpage!!</h3>
-    <p> I'm 25 years old, was born and raised in New York City and tried going to school for forensic science before I changed my mind to pursue computer science. I've recently gotten into jogging along with podcasts.</p>
-    <img src="/pictures/bookstore_selfie.jpg">
+    <p id="Introduction"> I'm 25 years old, was born and raised in New York City and tried going to school for forensic science before I changed my mind to pursue computer science. I've recently gotten into jogging along with podcasts.</p>
+    <img src="Images/bookstore_selfie2.jpg">
     <p>Current Interests:</p>
     <ol>
       <li><a href="https://gnu.org/software/emacs"> Emacs </a></li>
@@ -39,8 +22,10 @@
     </ol>
 
     <form>
-      <h3>Visitor input survey: Does pineapple belong on pizza?</h3>
-      <input type><br>
+      <h3 id="survey_name">Does pineapple belong on pizza?</h3>
+      <input type="radio" name="Visitor survey: Does pineapple belong on pizza?" value="Yes">Yes<br>
+      <input type="radio" name="Visitor survey: Does pineapple belong on pizza?" value="No">No<br>
+      <input type="button" name="submit" value="submit"><br>
 
 
     </form>
