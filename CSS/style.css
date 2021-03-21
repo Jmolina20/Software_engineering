@@ -1,5 +1,9 @@
 
-      
+      #selfie{
+            background: #bfc1c2;
+            margin-left: 500px;
+            margin-right: 500px;
+      }
 
       #special_story{
             font-style: italic;
@@ -9,6 +13,8 @@
             margin-left: 45%;
             margin-right: 55%;
             text-align: center;
+            position:fixed;
+            top:0;
       }
 
       table{
