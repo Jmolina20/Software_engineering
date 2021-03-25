@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <style>
+        .navigation{
+            display:flex;
+            position:absolute;
+            top:40px;
+            left:0px;
+            animation-name: drive;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-iteration-count: initial;
+            animation-play-state: running;
+            justify-content: space-evenly;
+            background-color: grey;
+            
+        }
+        @keyframes drive {
+            from{
+               /*  transform:translateX(0px) */
+            
+               height: 0px;
+               width: 0px;
+            }
+            to{
+               /*transform:translateX(1000px)*/
+               
+               height: 50vw;
+               width:100vw;
+            }
+
+        }
+
+
+
+    </style>
+
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navigation">
+        <h2>Home</h2>
+        <h2>Contact info</h2>
+        <h2>Surprise page</h2>
+    </nav>
+</body>
+</html>

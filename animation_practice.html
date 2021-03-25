@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html">
+    <style>
+        .body{
+            height: 400px;
+        }
+
+        .road{
+            height:400px;
+            background: blue;
+            width:100%;
+        }
+        .Rain_frog{
+            position:absolute;
+            top:40px;
+            left:0px;
+            animation-name: drive;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+
+        }
+        @keyframes drive{
+            from{
+               transform:translateX(1000px)  
+            }
+            to{
+               transform:translateX(0px)
+            }
+        }
+
+
+
+    </style>
+
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="road" >
+        <img class="Rain_frog" src="../personal_website/Images/rain_frog.jpg">
+    </div>    
+
+
+
+</body>
+</html>

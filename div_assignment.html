@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 
     <style>
-        .container{
+        .container_row{
             border: solid;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-end;
+            flex-direction: row;
             height: 300px;
         }
         .child{
             display: flex;
             background-color: aqua;
             width:25%;
-            border: solid;
-            border: black;
-            justify-content: center;
+            border: 2px solid black;
             flex: 1;
         }
 
-        @media (min-width: none;){
+        .container_reverse_row{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: ivory;
+            flex-direction: row-reverse;
+            justify-content: left;
+        }
+
+        .container_justify_test {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: lightcoral;
+            justify-content: right;
+        }
+        .p{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .test-box{
+            background-color: grey;
+        }
+
+        @media (max-width: 500px) and (min-width: none;){
             p{
-                font-family: 'Times New Roman', Times, serif;
                 font-size: 1rem;
                 line-height: 25%;
-
+                color: blue;
             }
         }
         
@@ -33,16 +54,36 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="container_row">
         <div class="child"><h3>Thing 1</h3></div>
         <div class="child"><h3>Thing 2</h3></div>
         <div class="child"><h3>Thing 3</h3></div>
         <div class="child"><h3>Thing 4</h3></div>
         <div class="child"><h3>Thing 5</h3></div>
+    </div> 
+    <br>
+    <div class="container_reverse_row">
+        <div class="child"><h3>Thing 6</h3></div>
+        <div class="child"><h3>Thing 7</h3></div>
+        <div class="child"><h3>Thing 8</h3></div>
+        <div class="child"><h3>Thing 9</h3></div>
+        <div class="child"><h3>Thing 10</h3></div>
     </div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    <br>
+    <div class="container_justify_test">
+        <div class="child"><h3>Thing 11</h3></div>
+        <div class="child"><h3>Thing 12</h3></div>
+        <div class="child"><h3>Thing 13</h3></div>
+        <div class="child"><h3>Thing 14</h3></div>
+        <div class="child"><h3>Thing 15</h3></div>
+    </div>
+    <div id="test-box">
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
         Quibusdam amet dolorem reiciendis maiores accusamus placeat illum minima 
         excepturi necessitatibus. Asperiores rerum, atque tempore corrupti commodi animi sit.
          Corrupti, expedita beatae?</p>
-</body>
+
+    </div>
+
+    </body>
 </html>
