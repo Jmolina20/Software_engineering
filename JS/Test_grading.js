@@ -1,3 +1,8 @@
+/*
+        The program is meant to help teachers grade their exams and sort their students scores into the corresponding letter grades.
+        
+*/
+
 var test_score=-1;
 
 if (test_score>=91)
