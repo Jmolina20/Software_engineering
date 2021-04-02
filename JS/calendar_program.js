@@ -2,6 +2,8 @@ var num = 8;
 var num1 = 6;
 var month;
 var day;
+var counter=1;
+while(counter<3){
 if (num >= 1 && num <= 12){
     if (num == 1){month = " January, "; }
     else if (num == 2){ month = " Febuary, ";}
@@ -33,3 +35,5 @@ else if (day < 1 || day > 7){
 }
 console.log("Welcome to the month of" + month);
 console.log("Today is" + day);
+    counter++;
+}
