@@ -1,4 +1,4 @@
-let num1;
+/*let num1;
 let num2;
 let num3;
 let sum;
@@ -20,9 +20,9 @@ for (counter = 0; counter<1; counter++){
             }
         }
     }
-}
+}}*/
 
-}
+
 /*while(quo!=0)
 {
 quo=math.floor(num/10) 
@@ -31,3 +31,21 @@ sum+=(rem*rem*rem)  //or use cube method
 num=quo 
 } (supposedly proper answer)
 */
+
+let quotient=1;
+let rem;
+let sum;
+let num=371;
+while (quotient!=0){
+    quotient=Math.floor(num/10);
+    rem=num%10;
+    sum+=(Math.pow(rem,3));
+    num=quotient;
+}
+
+if (sum == num){
+    console.log("Congrats, you have an armstrong number on your hands");
+}
+else if (sum !=num){
+    console.log("RIP, seems like an error on your hands");
+}
