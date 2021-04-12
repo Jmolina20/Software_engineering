@@ -1,18 +1,17 @@
-console.log ("Hello and welcome to Privacy 101 made by the NSA");
-console.log("Here we're going to go through what a common password is vs a strong password");
-let password = "password";
-let new_password = "";
-let new_passwordlength = password.length;
-console.log("A common password is something like " + password);
-console.log("Which can be hacked in seconds, a stronger version would be: ")
-new_password = password.replace(/s/g , '%');
-console.log (new_password) 
-console.log("This is decent, but it can be better");
-new_password= new_password.padStart(11, "@*");
-console.log("Something like " + new_password + "works much better");
+let statement="Welcome to the Gibberish Generator! Down below you'll find some example text we'll use";
+let statement2="It was the best of times, and it was the worst of times.";
+console.log(statement);
+console.log("Example text: " + statement2);
+console.log(statement2.padStart(60, "*"));
+console.log(statement2.padEnd(65, "3"));
+console.log(statement2.replace("a", "B"));
+console.log(statement2.replace(/i/ig, "b"));
+console.log(statement2.replaceAll("times", "cats"));
+console.log(statement2.replace(/i/g, "b"));
+if (statement.startsWith("It") == true){
+    console.log("Twas a success");
+}
+if (statement.endsWith("times.") == true){
+    console.log("The ending match was also a success");
 
-
-
-
-
-
+}

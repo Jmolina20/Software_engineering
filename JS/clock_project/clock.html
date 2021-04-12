@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="clock1.css">
+</head>
+<style>
+    .dot {
+        height: 200px;
+        width: 200px;
+        background-color:pink;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      
+      #clock{ 
+        position: relative;
+        top: 70px;
+        font-size: 50px;
+      }
+      
+      
+    </style>
+
+<body>
+
+  <div style="text-align:center">
+    <h1>circle 1</h1>
+    <div id="controlos">
+      <input id="txtTempo" type="text" value="0" size="4" maxlength="4"><button id="btnStart">Start</button>
+    </div>
+    <span class="dot">
+      <div id="clock" class="blue" contenteditable="true"><b>00:00</b></div>   
+    </span>    
+  </div>
+
+  <script>
+      // when the document is loaded, trigger the "documentLoaded" function
+    window.addEventListener('DOMContentLoaded', documentLoaded, false);
+
+var startTime;
+var limit;
+var timer;
+
+function documentLoaded() {
+    "use strict";
+
+    // listen for mouse clicks on the button
+    document.getElementById("btnStart").addEventListener("click", botaoClicked, false);
+
+    console.log("Documento carregado");
+}
+
+// when we click on the button, we save the current time, and the time limit. We then
+// create a timer to execute the "updateTime" function once a second.
+function botaoClicked() {
+    "use strict";
+
+    startTime = new Date();
+
+    limite = parseInt(document.getElementById("txtTempo").value);
+
+    clearInterval(timer);
+    timer = setInterval(updateTime, 1000);
+}
+
+function updateTime() {
+    "use strict";
+
+    // read the current time
+    var currentTime = new Date();
+
+    // calculate how many seconds passed since the start of the timer
+    var elapsed = (currentTime.getTime() - startTime.ge
+
+  </script>
+  
+  
+
+</body>
+</html>
