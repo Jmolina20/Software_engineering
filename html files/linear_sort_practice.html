@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<h3>Testing linear search</h3>
+<p id="statement">statement</p>
+<script>
+function linear_search (){
+let data=8;
+let set = [10,244,405, 1, 66, 7, 8];
+for (counter=0; counter< set.length;counter++){
+    if (set[counter] == data){
+        document.getElementById("statement").innerHTML="Data is found at index " + counter;
+        
+    }
+    else if (data!=set[counter]){
+        document.getElementById("statement").innerHTML="404 data not found.";
+        
+    }
+}
+}
+</script>
+</body>
+</html>

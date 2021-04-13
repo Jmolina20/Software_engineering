@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <p id="para1"></p>
+    <p id="para2">Once upon a time</p>
+    <div class="thing">thing 1</div>
+    <div class="thing">thing 2</div>
+    <div class="thing">thing 3</div>
+</body>
+<script>
+    let set = document.getElementsByClassName("thing");
+    document.getElementById("para1").innerHTML="test text";
+    document.getElementById("para2").textContent="It was the best of times, and the worst of times";
+    console.log(set);
+    console.log(set[0]);
+    console.log(set[set.length-1]);
+
+</script>
+</html>
