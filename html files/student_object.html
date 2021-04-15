@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h2>Student report card average:</h2>
+    <p id="name"></p>
+    <p id="math"></p>
+    <p id="eng"></p>
+    <p id="astronomy"></p>
+    <p id="score">test</p>
+    <script>
+        let student = {
+            name : "Franz Ferdinand", 
+            math_score:80, 
+            english_score:80, 
+            astronomy_score:80,
+            avg_score : function(){
+                student.avg = Math.floor((student.math_score + student.english_score + student.astronomy_score)/3);
+                return student.avg; 
+            }
+        
+        };
+        console.log(student);
+        document.getElementById("name").innerHTML = "Student name: " + student.name;
+        document.getElementById("math").innerHTML = "Math score: " + student.math_score;
+        document.getElementById("eng").innerHTML = "English score: " + student.english_score;
+        document.getElementById("astronomy").innerHTML = "Astronomy score: " + student.astronomy_score;
+        document.getElementById("score").innerHTML = "The average of Franz's test scores is " + student.avg_score();
+    </script>
+</body>
+
+</html>
