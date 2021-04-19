@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Callback practice</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h2 id="test">Heading 1</h2>
+    <p id="test2">Bookstores hate this institution for how it saves you money on books, click here to find out</p>
+    <button id="fav_button">Click here</button>
+    <script>
+        new_text = () => {document.getElementById("test2").innerHTML="Public libraries everywhere";} 
+        color_text = () => {document.getElementById("test").style.color="red"}
+        document.getElementById("fav_button").addEventListener("click",new_text)
+        document.getElementById("test").addEventListener("mouseover",color_text)
+        //function new_text(){document.getElementById("test2")="Public libraries everywhere"; }
+    </script>
+</body>
+</html>

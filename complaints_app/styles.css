@@ -1,3 +1,10 @@
-body {
+.h1 {
+    text-decoration-style: solid;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    align-items: flex-end;
 
 }

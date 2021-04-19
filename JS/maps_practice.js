@@ -1,19 +1,19 @@
 let student_records = new Map();
-student_records.set( 5, "Frankenstein");
-student_records.set ("King Arthur", 10);
-student_records.set ("Hannibal", 20);
-student_records.set ("Napoleon", 30);
-student_records.set ("Santa", 40);
-student_records.set ("Jon", 50);
-student_records.set ("Anne", 60);
-student_records.set ("James", 70);
-student_records.set ("Yahtzee", 80);
-student_records.set ("Hal", 100);
+student_records.set( 10, "Frankenstein");
+student_records.set (20 , "King Arthur");
+student_records.set (30, "Hannibal");
+student_records.set (40 , "Napoleon");
+student_records.set (50 , "Santa");
+student_records.set (60 , "Jon");
+student_records.set (70 , "Anne");
+student_records.set (80 , "James");
+student_records.set (90 , "Yahtzee");
+student_records.set (100, "Hal");
 
 console.log(student_records.size);
 console.log(student_records);
-console.log(student_records.has("Hannibal"));
-student_records.delete("Hannibal");
-console.log(student_records.has("Hannibal"));
+console.log(student_records.has(30));
+student_records.delete(30);
+console.log(student_records.has(30));
 console.log(student_records.size);
 student_records.forEach
