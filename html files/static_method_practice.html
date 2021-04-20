@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Static Method Practice</title>
+</head>
+<body>
+    <h1 id="circle"></h1>
+    <h1 id="rectangle"></h1>
+    <h1 id="sqaure"></h1>
+    <script>
+        class circle {
+            constructor (num1, num2) {
+                this.radius = num1;
+            }
+            circle_area = () =>{
+                c_area = Math.PI.toFixed(2) * (Math.pow(this.radius, 2));
+                return c_area;
+            }
+            circle_total_sides = () => {
+                return "404 error not found";
+            }
+        }
+        class rectangle {
+            constructor (length, width){
+                this.length = length;
+                this.width = width;
+            }
+            rectangle_area = () => {
+                r_area = this.length * this.width;
+            }
+            rectangle_total_sides = () => {
+                return 4;
+            }
+        }
+        class square {
+            constructor (temp1, temp2) {
+                this.s_length = temp1;
+                this.s_width = temp2;
+            }
+            square_area = () => {
+                s_area = this.s_length * this.s_width;
+                return s_area;
+            }
+            square_total_sides = () => {
+                return 4;
+            }
+        }
+    </script>
+</body>
+</html>

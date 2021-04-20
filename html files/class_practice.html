@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class Practice</title>
+</head>
+<body>
+    <h1>Per Scholas student summaries</h1>
+    <h2>Student names</h2>
+        <ol></ol>
+
+    <script>
+        class student {
+            id_table = new map ();
+            constructor (f_name,l_name,id,address,phone,email) {
+                this.f_name = f_name;
+                this.l_name = l_name;
+                this.id = id;
+                id_table.set (id, f_name + l_name);
+                this.address = address;
+                this.phone = phone;
+                this.email = email;
+
+            }
+            getStudentFullName = () => {
+                this.fullname = f_name + " " + l_name;
+                return (fullname);
+            }
+            getStudentContactInfo = () => {
+                temp_contact = [address, phone, email];
+                return (temp_contact);
+            }
+            createStudentEmail = () => {
+                temp_email = f_name + l_name + "@perscholas.com";
+                return (temp_email);
+            }
+            getAllStudents = () => {
+                console.log(id_table);
+            }
+            
+        }
+    </script>
+</body>
+</html>
