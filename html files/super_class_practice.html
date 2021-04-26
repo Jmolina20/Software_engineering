@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Super class practice</title>
+</head>
+<body>
+  <h2 id="header"></h2>
+    <script>
+        class Computer {
+            constructor(temp){
+                this.brand = temp;
+              }
+        };
+
+        class pc_Part extends Computer {
+            constructor(temp, num1, num2){
+                super(temp),
+                this.num_pins = num1,
+                this.pub_year=num2
+
+            }
+        }
+        const cpu = new pc_Part("amd", 678, 2000);
+        console.log("Yeah I just got a new computer, it's got an " + cpu.brand + " processor with " + cpu.num_pins + " pins and was made in " + cpu.pub_year);
+        document.getElementById("header").innerHTML = "Yeah I just got a new computer, it's got an " + cpu.brand + " process with " + cpu.num_pins + " pins and was made in " + cpu.pub_year;
+    </script>
+</body>
+</html>
