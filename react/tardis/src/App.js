@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-//render is a state property
+
 function App() {
   return (
     <div className="App">
+      <h1>Hello world</h1>
     </div>
   );
 }

@@ -1,9 +1,9 @@
 .h1 {
-    text-decoration-style: solid;
-    align-items: center;
+    text-decoration-style: solid; /*Doesn't work*/
+    align-items: center;/*Doesn't work*/
 }
 
 .search_bar {
-    align-items: center;
-    align-content: center;
+    align-items: center;/*Doesn't work*/
+    align-content: center;/*Doesn't work*/
 }
