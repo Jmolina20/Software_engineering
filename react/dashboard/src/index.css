@@ -1,0 +1,37 @@
+
+div{
+  border: solid;
+  border-color: black;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  "sidebar review rating analysis"
+  "sidebar visit  visit  visit "
+  ;
+}
+
+#sidebar {
+grid-area: sidebar;
+align-items: center;
+}
+
+#review {
+grid-area: review;
+}
+
+#visit {
+grid-area: visit;
+}
+
+#rating{
+  grid-area: rating;
+}
+
+.analysis{
+  grid-area: analysis;
+  align-content: center;
+} 
