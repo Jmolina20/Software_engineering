@@ -1,6 +1,6 @@
 function sidebar(){
     return (
-        <div class="id"></div>
+        <div class="id">Sidebar</div>
     );
 }
 

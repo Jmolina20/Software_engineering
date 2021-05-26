@@ -7,6 +7,10 @@
   "sidebar visitor visitor visitor"
 }
 
+.sidebar{
+  grid-area:sidebar;
+}
+
 .review{
   grid-area: review;
 }
