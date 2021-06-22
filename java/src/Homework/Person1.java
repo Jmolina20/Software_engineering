@@ -1,15 +1,12 @@
 package Homework;
 
-public class Student extends Person{
-	
+public class Person1 extends Person{
 	
 	private double stud_id;
 	private String subj1;
 	private String subj2;
 	private String subj3;
 	private String major;
-
-	Student() {}
 	
 	public void set_stud_id(double num) {
 		this.stud_id=num;
@@ -50,8 +47,5 @@ public class Student extends Person{
 	public String get_major() {
 		return(this.major);
 	}
-	
-	
-	
-
 }
+
