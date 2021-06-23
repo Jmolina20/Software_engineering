@@ -1,33 +1,49 @@
 package Homework;
 
+import java.util.Scanner;
+
+
 public class Student extends Person{
 	
-	
+	Scanner scan = new Scanner(System.in);
 	private double stud_id;
 	private String subj1;
 	private String subj2;
 	private String subj3;
 	private String major;
 
-	Student() {}
 	
-	public void set_stud_id(double num) {
-		this.stud_id=num;
-	}
-	public void set_subj1(String temp) {
-		this.subj1 = temp;
+	public Student() {
+		super();
 	}
 	
-	public void set_subj2(String temp2) {
-		this.subj2=temp2;
+	public void set_stud_id() {
+		System.out.println("Enter the student id of the student: ");
+		this.stud_id=scan.nextDouble();
+		scan.nextLine();
+	}
+	public void set_subj1() {
+		System.out.println("Enter the first subject on the student's schedule: ");
+		this.subj1 = scan.nextLine();
+		scan.nextLine();
 	}
 	
-	public void set_subj3(String temp3) {
-		this.subj3=temp3;
+	public void set_subj2() {
+		System.out.println("Enter the second subject on the student's schedule: ");
+		this.subj2=scan.nextLine();
+		scan.nextLine();
 	}
 	
-	public void set_major(String temp4) {
-		this.major=temp4;
+	public void set_subj3() {
+		System.out.println("Enter the third subject on the student's schedule: ");
+		this.subj3=scan.nextLine();
+		scan.nextLine();
+	}
+	
+	public void set_major() {
+		System.out.println("Enter the major of the student: ");
+		this.major=scan.nextLine();
+		scan.nextLine();
 	}
 	
 	public double get_stud_id() {
