@@ -1,23 +1,35 @@
 package com.example.model;
-import javax.persistence.Column;
+//import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 
 @Entity
-@Table(name="best_spies")
+@Table(name="top_spies")
 public class Spy {
 	@Id
 	private int id;
-	@Column
+	//@Column
 	private double rating;
-	@Column
+	//@Column
 	private String name;
-	@Column
+	//@Column
 	private String skills;
-	@Column
+	//@Column
 	private String birth_country;
+	public Spy() {}
+	
+	public Spy(int id, double rating, String name, String Birth_country, String skills) 
+	{
+		super();
+		this.id = id;
+		this.birth_country=Birth_country;
+		this.rating = rating;
+		this.name = name;
+		this.skills = skills;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -47,18 +59,6 @@ public class Spy {
 	}
 	public void setRating(double rating) {
 		this.rating = rating;
-	}
-	
-	public Spy() {}
-	
-	public Spy(int id, double rating, String name, String Birth_country, String skills) 
-	{
-		super();
-		this.id = id;
-		this.birth_country=Birth_country;
-		this.rating = rating;
-		this.name = name;
-		this.skills = skills;
 	}
 	
 	
