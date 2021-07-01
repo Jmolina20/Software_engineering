@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.example.Capstone_project.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,9 +11,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.repository.repository;
-import com.example.exception.resource_not_found_exception;
-import com.example.model.Spy;
+
+import com.example.Capstone_project.exception.resource_not_found_exception;
+import com.example.Capstone_project.model.Spy;
+import com.example.Capstone_project.repository.spyrepository;
 
 import java.util.List;
 
@@ -23,7 +24,7 @@ import java.util.List;
 public class Controller {
 
 	@Autowired
-	private repository spyrepo;
+	private spyrepository spyrepo;
 
 	@GetMapping("/spies")
 	public List<Spy> getAllSpies() {

@@ -1,4 +1,4 @@
-package com.example.exception;
+package com.example.Capstone_project.exception;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 

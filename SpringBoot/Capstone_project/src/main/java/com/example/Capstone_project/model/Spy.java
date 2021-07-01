@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.Capstone_project.model;
 //import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
